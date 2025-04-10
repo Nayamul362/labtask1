@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+
+            function validate(){
+                let user_name= document.forms["Registration"]["name"].value;
+                let Password = document.forms["Registration"]["Password"].value;
+                let email = document.forms["Registration"]["Email"].value;
+                let age = document.forms["Registration"]["age"].value;
+                let gender = document.forms["Registration"]["gender"].value;
+                let fav_lang= document.forms["Registration"]["fav_lang"].value;
+
+     
+
+
+            }
+        </script>
+        <from action =" Registration" action =""onsubmit="validate()" method="post">
+            <table>
+
+                <tr>
+                    <td>
+                        user_name:
+                    </td>
+                    <td ><input type ="text" name ="name"></td>
+                </tr>
+                <tr>
+                    <td> Password:</td>
+                    
+                    <td><input type="Password" name ="Password"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type ="Email"  name ="Email"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td ><input type ="Age"   name="Age"></td>
+                </tr>
+                <tr>
+
+                    <td>
+                        Gender:
+
+                    </td>
+                    <td><input type ="radio" name ="gender" value ="male">Male</td>
+                    <td><input type ="radio" name ="gender" value ="female">FeMale</td>c
+                </tr>
+                <tr>
+
+                    <td>Favourite Language:</td>
+                    <td>
+                        <select name="fav_lang" id="value"></select>
+                     
+                        <option name ="fav_lang">Bangla </option>
+                        <option name ="fav_lang">English </option>
+                        <option name ="fav_lang">Hindi </option>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <input type ="submit" value ="submit">
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+
+        </from>
+    </body>
+</html>
